@@ -1,0 +1,26 @@
+{
+  "name": "site",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\""
+  },
+  "dependencies": {
+    "@chakra-ui/icons": "^1.0.2",
+    "@chakra-ui/react": "^1.1.1",
+    "@chakra-ui/system": "^1.1.2",
+    "@emotion/react": "^11.1.4",
+    "@emotion/styled": "^11.0.0",
+    "framer-motion": "^3.1.1",
+    "next": "10.0.4",
+    "next-google-fonts": "^1.2.1",
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
+  },
+  "devDependencies": {
+    "prettier": "^2.2.1"
+  }
+}
