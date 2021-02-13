@@ -9,8 +9,11 @@ import Image from "next/image";
 import Link from "next/link";
 import ThemeToggler from "./ThemeToggler";
 import { siteData } from "./Head";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
+  const router = useRouter();
+  const { locale, locales, defaultLocale } = router;
   const { siteTitle } = siteData;
   const logoSize = 30;
   return (
