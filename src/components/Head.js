@@ -1,6 +1,6 @@
 import NextHead from "next/head";
 import GoogleFonts from "next-google-fonts";
-import { headingFont, bodyFont } from "../src/Chakra";
+import { headingFont, bodyFont } from "../Chakra";
 
 export const siteData = {
   siteTitle: "Site Title",

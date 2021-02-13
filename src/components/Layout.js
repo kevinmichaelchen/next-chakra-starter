@@ -2,7 +2,7 @@ import Navbar from "./Navbar";
 import { Box, Flex } from "@chakra-ui/react";
 import Head from "./Head";
 import Footer from "./Footer";
-import { Chakra } from "../src/Chakra";
+import { Chakra } from "../Chakra";
 
 const Layout = ({ children, pageTitle, cookies }) => {
   return (

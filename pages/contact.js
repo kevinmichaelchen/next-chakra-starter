@@ -1,5 +1,5 @@
 import { Heading } from "@chakra-ui/react";
-import Layout from "../components/Layout";
+import Layout from "../src/components/Layout";
 
 const Contact = ({ ...props }) => {
   return (

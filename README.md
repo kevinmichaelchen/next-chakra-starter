@@ -1,4 +1,5 @@
 # next-chakra-starter
+
 NextJS 10 Starter Kit with Chakra v1.
 
 ```
