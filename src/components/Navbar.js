@@ -2,16 +2,17 @@ import {
   Stack,
   Flex,
   Text,
-  Image,
   Link as ChakraLink,
   useColorModeValue,
 } from "@chakra-ui/react";
+import Image from "next/image";
 import Link from "next/link";
 import ThemeToggler from "./ThemeToggler";
 import { siteData } from "./Head";
 
 const Navbar = () => {
   const { siteTitle } = siteData;
+  const logoSize = 30;
   return (
     <Flex
       bg={useColorModeValue("white", "black")}
@@ -26,7 +27,9 @@ const Navbar = () => {
           <Flex flexDirection="row" justifyContent="center" alignItems="center">
             <Image
               src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Android_O_Preview_Logo.png"
-              boxSize={"30px"}
+              alt="Logo"
+              width={logoSize}
+              height={logoSize}
             />
             <Text pl={3}>{siteTitle}</Text>
           </Flex>
