@@ -1,16 +1,13 @@
-import { Heading } from "@chakra-ui/react";
 import Layout from "../src/components/Layout";
+import Contact from "../src/pages/Contact";
 
-const Contact = ({ ...props }) => {
+export default function ContactPage({ ...props }) {
   return (
-    <Layout pageTitle="Contact Us" {...props}>
-      <Heading>Contact</Heading>
-      Coming soon.
+    <Layout pageTitle="Contact" {...props}>
+      <Contact />
     </Layout>
   );
-};
-
-export default Contact;
+}
 
 // re-export the reusable `getServerSideProps` function
 export { getServerSideProps } from "../src/Chakra";

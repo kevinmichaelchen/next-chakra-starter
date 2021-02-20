@@ -1,22 +1,10 @@
-import { Stack, Box } from "@chakra-ui/react";
 import Layout from "../src/components/Layout";
-import { useIntl } from "react-intl";
+import Home from "../src/pages/Home";
 
-export default function Home({ ...props }) {
-  const { formatMessage } = useIntl();
-  const f = (id) => formatMessage({ id });
+export default function HomePage({ ...props }) {
   return (
     <Layout {...props}>
-      <Stack
-        spacing={"3rem"}
-        justify="center"
-        align={"center"}
-        shouldWrapChildren
-        maxW={800}
-      >
-        <h1>{f("hello")}</h1>
-        <Box>Your content</Box>
-      </Stack>
+      <Home />
     </Layout>
   );
 }

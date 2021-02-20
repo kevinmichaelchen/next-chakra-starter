@@ -1,18 +1,13 @@
-import { Heading, Stack, Box } from "@chakra-ui/react";
 import Layout from "../src/components/Layout";
+import About from "../src/pages/About";
 
-const About = ({ ...props }) => {
+export default function AboutPage({ ...props }) {
   return (
     <Layout pageTitle="About" {...props}>
-      <Stack spacing={2} maxW={500} lineHeight="taller">
-        <Heading>About</Heading>
-        <Box>This is an About sentence.</Box>
-      </Stack>
+      <About />
     </Layout>
   );
-};
-
-export default About;
+}
 
 // re-export the reusable `getServerSideProps` function
 export { getServerSideProps } from "../src/Chakra";

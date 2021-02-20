@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }) {
   const router = useRouter();
   const { locale, defaultLocale, pathname } = router;
   const localeCopy = locales[locale];
-  const messages = localeCopy[pathname];
+  const messages = { ...localeCopy.global, ...localeCopy[pathname] };
   return (
     <IntlProvider
       locale={locale}
